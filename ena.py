@@ -1,5 +1,6 @@
 from detect_voice import Detection
 from time import time, sleep
+from slugify import slugify
 from fetch_gif import GenerateGifs
 from process_video import VideoProcessor
 from utils import Utils
@@ -25,10 +26,6 @@ else:
     sys.exit()
 
 print(text)
-parser.add_argument("--transcript", required = True,help="Transcript for the video", type=str)
-args = parser.parse_args()
-
-text = args.transcript
 ctime = str(int(time()))
 audio_filename = f"voices\\voice_%s.mp3"%ctime
 detection.from_cloudtts(text, audio_filename)
@@ -39,9 +36,11 @@ no_query = math.ceil(len(text)/5)
 for i in range(no_query):
     query = iterator.take(5)
     if query:
+        query_filename = '_'.join(query)
+        query_filename = slugify(query_filename)
         query = ' '.join(query)
         print(query)
-        filename=f"gifs\\{query}{int(time())}.mp4"
+        filename=f"gifs\\{query_filename}{int(time())}.mp4"
         files.append(filename)
         generator.generate_gif(query=query, filename=filename, debug=True)
         sleep(5)
@@ -58,4 +57,6 @@ a_len = utils.get_audio_len(audio_filename)
 
 utils.reduce_video_length(output_file, v_len, a_len, "output\\reduced.mp4")
 utils.merge_video_audio("output\\reduced.mp4", audio_filename, "output\\final%s.mp4"%ctime)
+
+
 
