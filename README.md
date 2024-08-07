@@ -13,6 +13,8 @@
 
 </details>
 
+<img align="left" src="https://github.com/Aavtic/ena/releases/download/tags/ena-logo.png" alt="drawing" width="200"/>>
+
 # ENA
 
 ENA is a video generation program using GIFS!. Users can provide transcript for their videos and a video along with audio is generated based on the transcript.
