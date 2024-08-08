@@ -17,9 +17,10 @@
 
 # ENA
 
-ENA is a video generation program using GIFS!. Users can provide transcript for their videos and a video along with audio is generated based on the transcript.
+ENA is a video generation program using GIFS!. Users can provide transcript for their videos and a video along with audio is generated based on the transcript.&nbsp;&nbsp;
 
-&nbsp;
+<br>
+</br>
 
 ## Prerequisites
 - [Python][Python Download] - explains the library's concepts and provides step-by-step tutorials
