@@ -23,8 +23,8 @@ ENA is a video generation program using GIFS!. Users can provide transcript for 
 </br>
 
 ## Prerequisites
-- [Python][Python Download] - explains the library's concepts and provides step-by-step tutorials
-- [Git][Git Download] - a place to ask questions and discuss the library
+- [Python][Python Download] 
+- [Git][Git Download] 
 
 ## Installation
 
