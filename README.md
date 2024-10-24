@@ -13,7 +13,7 @@
 
 </details>
 
-<img align="left" src="https://github.com/Aavtic/ena/releases/download/tags/ena-logo.png" alt="drawing" width="200"/>
+<img align="left" src="https://github.com/user-attachments/assets/ce14d128-c3bb-4c23-8cf4-051afbe53314" alt="drawing" width="200"/>
 
 # ENA
 
