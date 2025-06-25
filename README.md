@@ -50,6 +50,12 @@ ENA generates the videos by downloading GIFs from [Giphy] and finally merging th
 
 So In-order to download gifs ENA uses the [Giphy Developers] program to fetch and download GIFs. You will have to create an [API Key] to plug in to ENA.
 
+### 🔒 Disclaimer
+
+- This tool uses **CloudTTS API** to generate audio from text.
+- It is **not intended** for any harm, abuse, or unauthorized automation of CloudTTS.
+- Usage is strictly for **personal, educational, or research** purposes.
+
 ## Usage
 
 you can use python to run the program and generate the desired video.
