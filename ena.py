@@ -1,3 +1,17 @@
+"""
+ENA - GIF-Based Video Generation Tool
+
+This script is part of ENA, a program that generates videos using GIFs and user-provided transcripts.
+It includes audio generation using CloudTTS API services.
+
+Disclaimer:
+- This tool uses CloudTTS API for generating audio from text.
+- It is not intended for any harm, abuse, or unauthorized automation against CloudTTS.
+- Use is intended for personal, educational, or research purposes only.
+
+Author: Aadish M
+"""
+
 from detect_voice import Detection
 from time import time, sleep
 from slugify import slugify
